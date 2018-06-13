@@ -58,11 +58,13 @@
         <DCC_E>false</DCC_E>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_UsePackage>tdbf;rtl;vcl;bindengine;bindcomp;dsnap;bindcompdbx;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_UsePackage>tdbf;rtl;vcl;bindengine;bindcomp;dsnap;bindcompdbx;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
@@ -100,6 +102,7 @@
         <DCCReference Include="..\..\Source\SynDBEdit.pas"/>
         <DCCReference Include="..\..\Source\SynEdit.pas"/>
         <DCCReference Include="..\..\Source\SynEditAutoComplete.pas"/>
+        <DCCReference Include="..\..\Source\SynEditCodeFolding.pas"/>
         <DCCReference Include="..\..\Source\SynEditDocumentManager.pas"/>
         <DCCReference Include="..\..\Source\SynEditExport.pas"/>
         <DCCReference Include="..\..\Source\SynEditHighlighter.pas"/>
@@ -155,6 +158,7 @@
         <DCCReference Include="..\..\Source\SynHighlighterFoxpro.pas"/>
         <DCCReference Include="..\..\Source\SynHighlighterGalaxy.pas"/>
         <DCCReference Include="..\..\Source\SynHighlighterGeneral.pas"/>
+        <DCCReference Include="..\..\Source\SynHighlighterGo.pas"/>
         <DCCReference Include="..\..\Source\SynHighlighterGWS.pas"/>
         <DCCReference Include="..\..\Source\SynHighlighterHashEntries.pas"/>
         <DCCReference Include="..\..\Source\SynHighlighterHaskell.pas"/>
@@ -255,6 +259,26 @@
                     <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
                     <VersionInfoKeys Name="Comments"/>
                 </VersionInfoKeys>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\MPCommonLibDD240.bpl">Mustangpeak Common Library Delphi DesignTime Package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\OrpheusDD240.bpl">TurboPack Orpheus Delphi designtime package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\GMLib_DXE7.bpl">GoogleMaps Library v1.5.5 (Copyright © Xavier Martínez - cadetill)</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclFMXtee9210.bpl">TeeChart Lite FMX Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcltee9210.bpl">TeeChart Standard VCL Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\SynEditDD240.bpl">TurboPack SynEdit Delphi designtime package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\ZComponentDesign210.bpl">Zeos Database Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\OmniThreadLibraryDesigntime210.bpl">OmniThreadLibrary designtime</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\EasyListviewDD240.bpl">MustangPeak EasyListview Designtime Package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\VirtualTreesDD240.bpl">TurboPack VirtualTree Delphi designtime package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\OrpheusDBDD240.bpl">TurboPack Orpheus Delphi datataware designtime package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\EssentialsDD240.bpl">TurboPack Essentials Delphi Designtime package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\SysToolsDD240.bpl">TurboPack SysTools Delphi Designtime package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\SysToolsDBDD240.bpl">TurboPack SysTools Delphi DB Designtime package</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\GMLib_DXE7_VCL.bpl">GoogleMaps Library v1.5.5 VCL (Copyright © Xavier Martínez - cadetill)</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\GMLibEdit_DXE7.bpl">GoogleMaps Library Editors (Copyright © Xavier Martínez - cadetill)</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k210.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp210.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Win32">True</Platform>
